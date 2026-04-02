@@ -24,19 +24,11 @@
 ## Introduction
 ### Low-Light Image Enhancement (LLIE) is a fundamental and critical task in computer vision, aiming to restore low-light images to normal illumination conditions while preserving local details and maintaining global color consistency. LLIE is essential for high-level vision tasks such as face detection in dim environments, object detection, video surveillance, and semantic scene segmentation, where the performance is often highly dependent on the quality of the enhanced images. However, due to nonlinear environmental factors and limitations of imaging devices, low light images often suffer from severe detail degradation, color distortion, and heavy noise, posing significant challenges to achieving high-quality enhancement.
 <div align="center">
-  <img src="./figures/Figure_1.png" height="650" width="800">
+  <img src="./figures/intro.png" height="650" width="800">
 </div>
 <p align="text-align"><strong>
- <textot>Figure 1: Visual Motivation and Key Insight of WALLIE. The first row presents enhancement results from
-different network architectures and feature domain modeling strategies. WALLIE achieves the best visual
-performance compared to all other methods. The second row presents the RGB histogram distributions of
-the enhanced results by WALLIE, which closely match the ground truth, indicating accurate global color
-restoration. The third row visually illustrates our core design: (h) illustrates how the input image/features
-are transformed into the wavelet domain, generating four frequency components (e.g., HL, LH, YL, HH).
-These multi-view frequency features undergo cross-domain interaction, producing output feature ‘Output’,
-which significantly enhances the perception of local details and textures. Subsequently, after the high- and
-low-frequency enhancement, the different frequency components are effectively separated and efficiently
-aggregated, further highlighting the superiority of our proposed WALLIE framework.</strong>
+(a) Visual comparisons with state-of-the-art methods, focusing on color distortion, noise suppression, texture consistency, and artifact reduction. The proposed method achieves superior perceptual quality, particularly in correcting global color distortion and restoring fine-grained local textures. (b) Illustration of the efficiency mechanism of the proposed framework. Cross-domain feature enhancement and denoising are achieved via multi-view feature interaction. The enhanced high- and low-frequency components are subsequently aggregated through adaptive Gaussian filtering, enabling effective perception of local details and textures.
+   </strong>
 </p>
 
 
