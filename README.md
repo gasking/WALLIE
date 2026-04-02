@@ -34,7 +34,7 @@
 
 
 <div align="center">
-  <img src="./figures/Figure_2.png" height="480" width="800">
+  <img src="./figures/overframe.png" height="480" width="800">
 </div>
 <p align="text-align"> <strong>
   Figure 2: (a) Overall architecture of the proposed WALLIE (The Image Detail Restoration Network reconstructs image details using cascaded convolutions combined with the S2WD module, with a down-sampling
@@ -73,79 +73,70 @@ tensorboardX==2.6.2.2
 
 ## Dataset 
 <div align="center">
-  <img src="./figures/Table_1.png" height="280" width="550">
+  <img src="./figures/Data_tab.png" height="280" width="550">
 </div>
+
 # *Results*
+
+### *Result on the LOLV1 Datasets*
+* **Quantitative comparison with representative state-of-the-art methods on the LOL-v1 dataset. The best results are highlighted in bold, and the second-best results are underlined. Notably, the GT-Mean strategy is not adopted in our evaluation. Methods marked with “*” denote general image restoration approaches.**
+<div align="center">
+  <img src="./figures/lolv1_tab.png" height="1000" width="800">
+</div>
+
+
+* **Visual comparison of results on LOL-V1 dataset**
+<div align="center">
+  <img src="./figures/lolv1_vis.png" height="600" width="1000">
+</div>
+<p align="center">
+Qualitative comparison with representative state-of-the-art methods on the LOL-v1 dataset. The proposed method achieves superior color perception and fine-grained detail restoration.
+</p>
+
+
+
 ### *Result on the LOLV2 Datasets*
-* **Quantitative comparison with state-of-the-art methods on LOLV2 datasets. The optimal results are marked with black bold, and the suboptimal  results are marked with an underline ‘‘–’’. **
+* **Quantitative comparison with representative state-of-the-art methods on the LOLv2-Synthetic and LOLv2-Real datasets. The best results are highlighted in bold, and the second-best results are underlined. Notably, the GT-Mean strategy is not adopted in our evaluation. All metrics follow the settings reported in the original papers.**
 <div align="center">
-  <img src="./figures/Table_2.png" height="650" width="800">
+  <img src="./figures/lolv2_tab.png" height="800" width="600">
 </div>
 
 
-
-*  ***Visual comparison of segmentation results on LOL-V2-Real dataset***
+* **Visual comparison of results on LOL-V2 dataset**
 <div align="center">
-  <img src="./figures/Figure_4_a.png" height="350" width="1000">
+  <img src="./figures/lolv2_vis.png" height="600" width="1000">
 </div>
 <p align="center">
-  Visual comparison of segmentation results on  LOL-V2-Real dataset
+Qualitative comparison with representative state-of-the-art methods on the LOLv2-Synthetic and LOLv2-Synthetic datasets.
 </p>
 
-*  ***Quantitative results of WALLIE and representative state-of-the-art methods on the LOLv2-Real dataset (PSNR and SSIM).***
+ * **Quantitative results of WALLIE and representative state-of-the-art methods on the LOLv2-Real dataset (PSNR and SSIM).** 
 <div align="center">
-  <img src="./figures/Figure_4_b.png" height="500" width="800">
+  <img src="./figures/fig.png" height="500" width="800">
 </div>
 <p align="center">
- Quantitative results of WALLIE and representative state-of-the-art methods on the LOLv2-Real dataset (PSNR and SSIM). The bottom-right corner of the plot denotes higher PSNR and SSIM values, indicating superior image quality. The bubble size indicates the LPIPS score; smaller bubbles represent better perceptual quality
-</p>
-
-
-*  ***Visual comparison of results on LOL-V2-Synthetic dataset***
-<div align="center">
-  <img src="./figures/Figure_5.png" height="600" width="800">
-</div>
-<p align="center">
-  Visual comparison of results on  LOL-V2-Syntheticl dataset
+ Quantitative results of WALLIE and representative
+state-of-the-art methods on the LOLv2-Real dataset (PSNR
+and SSIM).
 </p>
 
 
 
 
-### *Result on the LSRW-Huawei Dataset*
-* ***Quantitative comparison with state-of-the-art methods on LSRW-Huawei dataset. The optimal results are marked with black bold, and the suboptimal  results are marked with an underline ‘‘–’’. ***
+
+### *Result on the LSRW Dataset*
+* **Quantitative comparison on LSRW (Huawei and Nikon). Best results are in bold, second-best are underlined.**
 <div align="center">
-  <img src="./figures/Table_3.png" height="400" width="800">
+  <img src="./figures/lsrw_tab.png" height="1000" width="800">
 </div>
 
 
 
-* ***Visual comparison of  results  on LSRW-Huawei dataset ***
+* **Qualitative comparison with representative state-of-the-art methods on the LSRW (Huawei and Nikon) dataset. The proposed method shows superior performance in detail restoration and blur reconstruction.**
 <div align="center">
-  <img src="./figures/Figure_7.png" height="300" width="800">
+  <img src="./figures/lsrw_vis.png" height="600" width="800">
 </div>
 
-### *Result on the LSRW-Nikon Dataset*
-* Quantitative comparison with SOTA methods on LSRW-Nikon. The optimal result are marked as
-
-  black bold while the suboptimal results are underlined ‘–’.
-<div align="center">
-  <img src="./figures/Table_4.png" height="400" width="800">
-</div>
-
-
-* Visualization results of various state-of-the-art methods on the LSRW-Nikon dataset. WALLIE
-
-  consistently preserves fine details and achieves accurate color calibration, even under challenging and complex scene conditions. (Zoom-in for best view.)
-<div align="center">
-  <img src="./figures/Figure_8.png" height="250" width="800">
-</div>
-
-
-* ***Results of the non-reference Datasets***
-<div align="center">
-  <img src="./figures/Table_5.png" height="400" width="800">
-</div>
 
 
 
@@ -169,7 +160,7 @@ tensorboardX==2.6.2.2
 
 
 
-## Ablation Study
+<!--## Ablation Study
 
 ### **Effectiveness of the proposed module:**
 * **Ablation study of different modules. Components in the encoder and decoder are individually replaced or removed. ”×” indicates the absence of the corresponding module (for S2WD, ”×” means using only standard convolution). Bold numbers indicate the best performance, and underlined numbers denote the second-best.**
@@ -251,7 +242,7 @@ of Figure 17).
 <div align="center">
   <img src="./figures/Figure_17.png" height="600" width="800">
   <p><strong>Figure 17:</strong>Model limitation under extreme darkness. (The absence of local detail and color cues under extremely low-light conditions hinders the model’s ability to perform fine-grained enhancement.)</p>
-</div>
+</div>-->
 
 ## Visualization
 
